@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Table - Côte Brasserie</title>
+  <style>
+    body {
+      font-family: Atlassian Sans;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      /* Background image */
+      background: url('https://cote-renaissance-be.azurewebsites.net/wp-content/uploads/2024/06/web__052__cote-brasserie__hays-galleria-event-2024.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      background-color:#a67c00; /* to make text readable */
+      padding: 10px;
+      border-radius: 6px;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #a67c00;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a67c00;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book a Table</h1>
+  <form id="bookingForm" action="#" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time" required />
+
+    <label for="guests">Number of Guests</label>
+    <select id="guests" name="guests" required>
+      <option value="" disabled selected>Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6+">6+</option>
+    </select>
+
+    <label for="requests">Special Requests</label>
+    <textarea id="requests" name="requests" rows="4" placeholder="Optional"></textarea>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+
+  <script>
+    // Simple front-end form submission handler
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from submitting normally
+      alert('Thank you for your booking request! We will get back to you shortly.');
+      this.reset(); // Reset the form fields
+    });
+  </script>
+</body>
+</html>
