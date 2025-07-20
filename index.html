@@ -54,7 +54,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0 ms-auto">
         <ul class="d-flex align-items-center">
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
@@ -71,21 +71,22 @@
   <main id="main">
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-8">
-            <h1>Welcome to <span>Côte Brasserie</span></h1>
-           <p style="color: white;">"Savor Exquisite Cuisine: Let Every Bite Transport You to a World of Irresistible Flavors!"</p>
-
-            <div class="btns d-flex gap-2">
-              <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-              <a href="book.html" class="btn-book animated fadeInUp scrollto">Book a Table</a>
-            </div>
-          </div>
-        </div>
+   <section id="hero" class="d-flex align-items-center">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="C:\Users\Cristina\Desktop\my portofolio\Cote BRASSERIE\food.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+    <div class="col-lg-8">
+      <h1>Welcome to <span>Côte Brasserie</span></h1>
+      <p style="color: white;">"Savor Exquisite Cuisine: Let Every Bite Transport You to a World of Irresistible Flavors!"</p>
+      <div class="btns d-flex gap-2">
+        <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+        <a href="book.html" class="btn-book animated fadeInUp scrollto">Book a Table</a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 <!-- End of Home Section -->
  <!-- ======= About Section ======= --> 
@@ -149,7 +150,7 @@
 
           </div> 
 
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(https://www.cote.co.uk/_next/image?url=https%3A%2F%2Fcote-renaissance-be.azurewebsites.net%2Fwp-content%2Fuploads%2F2024%2F06%2F012_Cote_Brighton_header-scaled.jpg&amp;w=3840&amp;q=75) ;" data-aos="fade-up" data-aos-delay="150"> 
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(https://www.stchristophersplace.com/wp-content/uploads/2017/10/cote-interior-refurb-1.png) ;" data-aos="fade-up" data-aos-delay="150"> 
 
             <div class="call-us position-absolute"> 
 
@@ -184,30 +185,20 @@
             </p> 
 
           </div> 
-
-        </div> 
-
+ </div> 
         <div class="col-lg-4 position-relative about-img" style="background-image: url(https://northernvirginiamag.com/wp-content/uploads/2024/10/top-10.webp);" data-aos="fade-up" data-aos-delay="150"> 
           <div class="call-us position-absolute"> 
-
-            <h2>Delicacies</h2> 
-
-          </div> 
-
+         <h2>Delicacies</h2> 
         </div> 
-
       </div> 
 
-    </div> 
-
-     
-
+      </div>
+    </div>
   </section> 
 
 <!-- End of About Section -->
-
 <!-- ======= Menu Section ======= -->
-<section id="menu" class="menu" style="background-image: url:https://yorkshirefoodguide.co.uk/wp-content/uploads/2017/07/Cote-Brasserie-Leeds-6.jpg; background-size: cover; background-position: center;">
+<section id="menu" class="menu" style="background-size: cover; background-position: center;">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h3>Menu</h3>
@@ -218,7 +209,7 @@
   <div class="container mt-5">
     <!-- Nav Tabs -->
     <ul class="nav nav-tabs custom-tabs flex-column flex-sm-row justify-content-center" id="galleryTabs" role="tablist">
-      <li class="nav-item"><a class="nav-link" id="beverages-tab" data-toggle="tab" href="#beverages" role="tab">Beverages</a></li>
+      <li class="nav-item"><a class="nav-link active" id="beverages-tab" data-toggle="tab" href="#beverages" role="tab">Beverages</a></li>
       <li class="nav-item"><a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Lunch</a></li>
       <li class="nav-item"><a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Dinner</a></li>
       <li class="nav-item"><a class="nav-link" id="appetizers-tab" data-toggle="tab" href="#appetizers" role="tab">Appetizers</a></li>
@@ -227,277 +218,210 @@
     </ul>
 
     <div class="tab-content mt-3" id="galleryTabContent">
+      <!-- Beverages -->
+      <div class="tab-pane fade show active" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
+        <div class="row g-5">
+          <div id="left-column" class="col-lg-6 menu-item"></div>
+          <div id="right-column" class="col-lg-6 menu-item"></div>
+        </div>
+      </div>
 
-<!-- Beverages Section with Two Columns and Extra Spacing -->
-<div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
-  <div class="row g-5">
+      <!-- Lunch -->
+      <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+        <div class="row g-5">
+          <div id="lunch-left" class="col-lg-6 menu-item"></div>
+          <div id="lunch-right" class="col-lg-6 menu-item"></div>
+        </div>
+      </div>
 
-    <!-- Left Column -->
-    <div class="col-lg-6 menu-item">
-      <div class="menu-content mb-3"><a href="#">Classic Lemonade</a><span>$3.50</span></div>
-      <div class="menu-ingredients mb-4">Freshly squeezed lemons with a hint of sweetness.</div>
+      <!-- Dinner -->
+      <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+        <div class="row g-5">
+          <div id="dinner-left" class="col-lg-6 menu-item"></div>
+          <div id="dinner-right" class="col-lg-6 menu-item"></div>
+        </div>
+      </div>
 
-      <div class="menu-content mb-3"><a href="#">Citrus Spritz</a><span>$7.50</span></div>
-      <div class="menu-ingredients mb-4">Grapefruit liqueur, blood orange soda, dried orange.</div>
+      <!-- Appetizers -->
+      <div class="tab-pane fade" id="appetizers" role="tabpanel" aria-labelledby="appetizers-tab">
+        <div class="row g-5">
+          <div id="appetizers-left" class="col-lg-6 menu-item"></div>
+          <div id="appetizers-right" class="col-lg-6 menu-item"></div>
+        </div>
+      </div>
 
-      <div class="menu-content mb-3"><a href="#">Passion in Paris</a><span>$7.50</span></div>
-      <div class="menu-ingredients mb-4">Passion fruit liqueur, vanilla vodka, pineapple juice.</div>
+      <!-- Desserts -->
+      <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+        <div class="row g-5">
+          <div id="desserts-left" class="col-lg-6 menu-item"></div>
+          <div id="desserts-right" class="col-lg-6 menu-item"></div>
+        </div>
+      </div>
 
-      <div class="menu-content mb-3"><a href="#">Iced Matcha Latte</a><span>$4.50</span></div>
-      <div class="menu-ingredients mb-4">Matcha, almond milk, lightly sweetened.</div>
-
-      <div class="menu-content mb-3"><a href="#">Espresso Martini</a><span>$8.00</span></div>
-      <div class="menu-ingredients mb-4">Vodka, espresso, coffee liqueur, sugar syrup.</div>
-
-      <div class="menu-content mb-3"><a href="#">Mint Cucumber Cooler</a><span>$4.95</span></div>
-      <div class="menu-ingredients mb-4">Cucumber, mint, lime, sparkling water.</div>
-    </div>
-
-    <!-- Right Column -->
-    <div class="col-lg-6 menu-item">
-      <div class="menu-content mb-3"><a href="#">Vanilla Cold Brew</a><span>$5.25</span></div>
-      <div class="menu-ingredients mb-4">Cold brew with vanilla syrup and oat milk.</div>
-
-      <div class="menu-content mb-3"><a href="#">Spiced Chai Latte</a><span>$4.75</span></div>
-      <div class="menu-ingredients mb-4">Chai, cinnamon, steamed milk blend.</div>
-
-      <div class="menu-content mb-3"><a href="#">Berry Lemon Fizz</a><span>$5.00</span></div>
-      <div class="menu-ingredients mb-4">Blueberry syrup, lemon soda, crushed ice.</div>
-
-      <div class="menu-content mb-3"><a href="#">Pineapple Mojito</a><span>$6.00</span></div>
-      <div class="menu-ingredients mb-4">Pineapple juice, mint, lime, soda water.</div>
-
-      <div class="menu-content mb-3"><a href="#">Iced Americano</a><span>$3.25</span></div>
-      <div class="menu-ingredients mb-4">Espresso poured over ice and water.</div>
-
-      <div class="menu-content mb-3"><a href="#">Peach Iced Tea</a><span>$3.75</span></div>
-      <div class="menu-ingredients mb-4">Brewed black tea with peach infusion.</div>
-    </div>
-
-  </div>
-</div>
-
-
-    <!-- Lunch -->
-<div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
-  <div class="row g-5">
-    <div class="col-lg-6">
-      <div class="menu-content mb-4"><a href="#">Turkey Avocado Wrap</a><span>$10.95</span></div>
-      <div class="menu-ingredients mb-4">Sliced turkey breast, avocado, spinach, chipotle mayo.</div>
-
-      <div class="menu-content mb-4"><a href="#">Grilled Chicken Caesar Salad</a><span>$12.50</span></div>
-      <div class="menu-ingredients mb-4">Romaine, grilled chicken, parmesan, Caesar dressing.</div>
-
-      <div class="menu-content mb-4"><a href="#">Quinoa & Roasted Veggie Bowl</a><span>$11.95</span></div>
-      <div class="menu-ingredients mb-4">Quinoa with roasted seasonal vegetables and tahini.</div>
-
-      <div class="menu-content mb-4"><a href="#">BLT Sandwich</a><span>$9.50</span></div>
-      <div class="menu-ingredients mb-4">Bacon, lettuce, tomato on toasted sourdough.</div>
-
-      <div class="menu-content mb-4"><a href="#">Tomato Basil Soup</a><span>$6.00</span></div>
-      <div class="menu-ingredients mb-4">Creamy tomato soup with fresh basil.</div>
-
-      <div class="menu-content mb-4"><a href="#">Veggie Wrap</a><span>$9.75</span></div>
-      <div class="menu-ingredients mb-4">Mixed veggies, hummus, spinach in whole wheat wrap.</div>
-    </div>
-    <div class="col-lg-6">
-      <div class="menu-content mb-4"><a href="#">Fish Tacos</a><span>$14.95</span></div>
-      <div class="menu-ingredients mb-4">Grilled fish, cabbage slaw, avocado crema.</div>
-
-      <div class="menu-content mb-4"><a href="#">Pasta Primavera</a><span>$13.50</span></div>
-      <div class="menu-ingredients mb-4">Pasta with fresh vegetables and light tomato sauce.</div>
-
-      <div class="menu-content mb-4"><a href="#">Chicken Panini</a><span>$11.95</span></div>
-      <div class="menu-ingredients mb-4">Grilled chicken, mozzarella, pesto on ciabatta.</div>
-
-      <div class="menu-content mb-4"><a href="#">Greek Salad</a><span>$10.50</span></div>
-      <div class="menu-ingredients mb-4">Cucumber, tomato, olives, feta, red onion, olive oil.</div>
-
-      <div class="menu-content mb-4"><a href="#">Roast Beef Sandwich</a><span>$12.95</span></div>
-      <div class="menu-ingredients mb-4">Thinly sliced roast beef with horseradish mayo.</div>
-
-      <div class="menu-content mb-4"><a href="#">Sweet Potato Fries</a><span>$5.50</span></div>
-      <div class="menu-ingredients mb-4">Crispy sweet potato fries with chipotle mayo.</div>
+      <!-- Kids Menu -->
+      <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
+        <div class="row g-5">
+          <div id="kids-left" class="col-lg-6 menu-item"></div>
+          <div id="kids-right" class="col-lg-6 menu-item"></div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Dinner -->
-<div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
-  <div class="row g-5">
-    <div class="col-lg-6">
-      <div class="menu-content mb-4"><a href="#">Grilled Filet Mignon</a><span>$25.95</span></div>
-      <div class="menu-ingredients mb-4">Steak with garlic mashed potatoes and asparagus.</div>
+<script>
+  // Menu Data Arrays, 12 items or close per section
+  const beverageMenu = [
+    { name: "Espresso", price: 2.50, description: "Rich and bold single shot espresso.", column: "left" },
+    { name: "Cappuccino", price: 3.50, description: "Espresso with steamed milk and foam.", column: "left" },
+    { name: "Latte", price: 3.75, description: "Creamy steamed milk with a shot of espresso.", column: "left" },
+    { name: "Tea", price: 2.25, description: "Selection of black, green, and herbal teas.", column: "left" },
+    { name: "Classic Lemonade", price: 3.50, description: "Freshly squeezed lemons with a hint of sweetness.", column: "left" },
+    { name: "Citrus Spritz", price: 7.50, description: "Grapefruit liqueur, blood orange soda, dried orange.", column: "left" },
 
-      <div class="menu-content mb-4"><a href="#">Salmon Teriyaki</a><span>$21.95</span></div>
-      <div class="menu-ingredients mb-4">Grilled salmon, teriyaki glaze, rice and veg.</div>
+    { name: "Americano", price: 2.95, description: "Espresso diluted with hot water.", column: "right" },
+    { name: "Mocha", price: 4.00, description: "Espresso with chocolate and steamed milk.", column: "right" },
+    { name: "Iced Coffee", price: 3.25, description: "Cold brewed coffee served over ice.", column: "right" },
+    { name: "Hot Chocolate", price: 3.75, description: "Rich and creamy hot chocolate with whipped cream.", column: "right" },
+    { name: "Vanilla Cold Brew", price: 5.25, description: "Cold brew with vanilla syrup and oat milk.", column: "right" },
+    { name: "Spiced Chai Latte", price: 4.75, description: "Chai, cinnamon, steamed milk blend.", column: "right" }
+  ];
 
-      <div class="menu-content mb-4"><a href="#">Chicken Alfredo</a><span>$20.00</span></div>
-      <div class="menu-ingredients mb-4">Grilled chicken, creamy Alfredo sauce, fettuccine.</div>
+  const lunchMenu = [
+    { name: "Turkey Avocado Wrap", price: 10.95, description: "Sliced turkey breast, avocado, spinach, chipotle mayo.", column: "left" },
+    { name: "Quinoa & Roasted Veggie Bowl", price: 11.95, description: "Quinoa with roasted seasonal vegetables and tahini.", column: "left" },
+    { name: "Tomato Basil Soup", price: 6.00, description: "Creamy tomato soup with fresh basil.", column: "left" },
+    { name: "Fish Tacos", price: 14.95, description: "Grilled fish, cabbage slaw, avocado crema.", column: "left" },
+    { name: "Chicken Panini", price: 11.95, description: "Grilled chicken, mozzarella, pesto on ciabatta.", column: "left" },
+    { name: "Roast Beef Sandwich", price: 12.95, description: "Thinly sliced roast beef with horseradish mayo.", column: "left" },
 
-      <div class="menu-content mb-4"><a href="#">Vegetable Stir Fry</a><span>$18.50</span></div>
-      <div class="menu-ingredients mb-4">Mixed vegetables sautéed in soy-ginger sauce.</div>
+    { name: "Grilled Chicken Caesar Salad", price: 12.50, description: "Romaine, grilled chicken, parmesan, Caesar dressing.", column: "right" },
+    { name: "BLT Sandwich", price: 9.50, description: "Bacon, lettuce, tomato on toasted sourdough.", column: "right" },
+    { name: "Veggie Wrap", price: 9.75, description: "Mixed veggies, hummus, spinach in whole wheat wrap.", column: "right" },
+    { name: "Pasta Primavera", price: 13.50, description: "Pasta with fresh vegetables and light tomato sauce.", column: "right" },
+    { name: "Greek Salad", price: 10.50, description: "Cucumber, tomato, olives, feta, red onion, olive oil.", column: "right" },
+    { name: "Sweet Potato Fries", price: 5.50, description: "Crispy sweet potato fries with chipotle mayo.", column: "right" }
+  ];
 
-      <div class="menu-content mb-4"><a href="#">Lamb Chops</a><span>$28.00</span></div>
-      <div class="menu-ingredients mb-4">Grilled lamb chops with rosemary and garlic.</div>
+  const dinnerMenu = [
+    { name: "Grilled Filet Mignon", price: 25.95, description: "Steak with garlic mashed potatoes and asparagus.", column: "left" },
+    { name: "Chicken Alfredo", price: 20.00, description: "Grilled chicken, creamy Alfredo sauce, fettuccine.", column: "left" },
+    { name: "Lamb Chops", price: 28.00, description: "Grilled lamb chops with rosemary and garlic.", column: "left" },
+    { name: "Beef Stroganoff", price: 22.50, description: "Tender beef in creamy mushroom sauce over noodles.", column: "left" },
+    { name: "Duck Breast", price: 27.50, description: "Seared duck breast with cherry glaze and wild rice.", column: "left" },
+    { name: "Mushroom Risotto", price: 19.95, description: "Creamy risotto with wild mushrooms and parmesan.", column: "left" },
 
-      <div class="menu-content mb-4"><a href="#">Seafood Paella</a><span>$24.95</span></div>
-      <div class="menu-ingredients mb-4">Rice with shrimp, mussels, and saffron spices.</div>
-    </div>
-    <div class="col-lg-6">
-      <div class="menu-content mb-4"><a href="#">Beef Stroganoff</a><span>$22.50</span></div>
-      <div class="menu-ingredients mb-4">Tender beef in creamy mushroom sauce over noodles.</div>
+    { name: "Salmon Teriyaki", price: 21.95, description: "Grilled salmon, teriyaki glaze, rice and veg.", column: "right" },
+    { name: "Vegetable Stir Fry", price: 18.50, description: "Mixed vegetables sautéed in soy-ginger sauce.", column: "right" },
+    { name: "Seafood Paella", price: 24.95, description: "Rice with shrimp, mussels, and saffron spices.", column: "right" },
+    { name: "Eggplant Parmesan", price: 17.95, description: "Baked eggplant with marinara and melted mozzarella.", column: "right" },
+    { name: "Shrimp Scampi", price: 23.95, description: "Shrimp sautéed in garlic butter sauce over linguine.", column: "right" },
+    { name: "Stuffed Bell Peppers", price: 18.00, description: "Bell peppers stuffed with rice, veggies, and cheese.", column: "right" }
+  ];
 
-      <div class="menu-content mb-4"><a href="#">Eggplant Parmesan</a><span>$17.95</span></div>
-      <div class="menu-ingredients mb-4">Baked eggplant with marinara and melted mozzarella.</div>
+  const appetizersMenu = [
+    { name: "Bruschetta", price: 6.50, description: "Grilled bread with tomato, basil, and olive oil.", column: "left" },
+    { name: "Stuffed Mushrooms", price: 7.95, description: "Mushrooms stuffed with cheese and herbs.", column: "left" },
+    { name: "Calamari", price: 9.50, description: "Fried calamari with marinara sauce.", column: "left" },
+    { name: "Spinach Artichoke Dip", price: 8.95, description: "Creamy dip served with toasted bread.", column: "left" },
+    { name: "Caprese Salad", price: 7.95, description: "Tomato, mozzarella, basil, balsamic glaze.", column: "left" },
+    { name: "Garlic Bread", price: 4.50, description: "Toasted bread with garlic and herbs.", column: "left" },
 
-      <div class="menu-content mb-4"><a href="#">Duck Breast</a><span>$27.50</span></div>
-      <div class="menu-ingredients mb-4">Seared duck breast with cherry glaze and wild rice.</div>
+    { name: "Chicken Wings", price: 10.50, description: "Buffalo wings served with ranch dressing.", column: "right" },
+    { name: "Deviled Eggs", price: 6.00, description: "Classic deviled eggs with paprika.", column: "right" },
+    { name: "Mozzarella Sticks", price: 7.50, description: "Breaded mozzarella fried to golden crisp.", column: "right" },
+    { name: "Hummus Plate", price: 6.75, description: "House-made hummus with pita and veggies.", column: "right" },
+    { name: "Onion Rings", price: 5.50, description: "Crispy battered onion rings.", column: "right" },
+    { name: "Shrimp Cocktail", price: 9.95, description: "Chilled shrimp with cocktail sauce.", column: "right" }
+  ];
 
-      <div class="menu-content mb-4"><a href="#">Shrimp Scampi</a><span>$23.95</span></div>
-      <div class="menu-ingredients mb-4">Shrimp sautéed in garlic butter sauce over linguine.</div>
+  const dessertsMenu = [
+    { name: "Chocolate Lava Cake", price: 7.95, description: "Warm chocolate cake with molten center.", column: "left" },
+    { name: "Cheesecake", price: 6.95, description: "Classic New York style cheesecake.", column: "left" },
+    { name: "Tiramisu", price: 7.50, description: "Coffee-flavored Italian dessert.", column: "left" },
+    { name: "Lemon Tart", price: 6.50, description: "Tangy lemon tart with whipped cream.", column: "left" },
+    { name: "Ice Cream Sundae", price: 5.95, description: "Vanilla ice cream with chocolate sauce.", column: "left" },
+    { name: "Fruit Sorbet", price: 5.50, description: "Refreshing seasonal fruit sorbet.", column: "left" },
 
-      <div class="menu-content mb-4"><a href="#">Mushroom Risotto</a><span>$19.95</span></div>
-      <div class="menu-ingredients mb-4">Creamy risotto with wild mushrooms and parmesan.</div>
+    { name: "Panna Cotta", price: 6.95, description: "Creamy Italian pudding with berries.", column: "right" },
+    { name: "Brownie", price: 5.95, description: "Fudgy chocolate brownie with nuts.", column: "right" },
+    { name: "Apple Pie", price: 6.00, description: "Classic apple pie with cinnamon.", column: "right" },
+    { name: "Creme Brulee", price: 7.50, description: "Rich custard topped with caramelized sugar.", column: "right" },
+    { name: "Chocolate Mousse", price: 6.75, description: "Light and airy chocolate mousse.", column: "right" },
+    { name: "Banana Split", price: 6.50, description: "Banana with ice cream, nuts, and cherries.", column: "right" }
+  ];
 
-      <div class="menu-content mb-4"><a href="#">Stuffed Bell Peppers</a><span>$18.00</span></div>
-      <div class="menu-ingredients mb-4">Bell peppers stuffed with rice, veggies, and cheese.</div>
-    </div>
-  </div>
-</div>
+  const kidsMenu = [
+    { name: "Chicken Nuggets", price: 6.95, description: "Served with fries and ketchup.", column: "left" },
+    { name: "Mini Cheeseburger", price: 7.95, description: "Mini burger with cheese and pickles.", column: "left" },
+    { name: "Mac & Cheese", price: 5.95, description: "Classic macaroni and cheese.", column: "left" },
+    { name: "Grilled Cheese", price: 5.50, description: "Toasted bread with melted cheese.", column: "left" },
+    { name: "Pasta with Butter", price: 5.50, description: "Simple pasta tossed with butter.", column: "left" },
+    { name: "Fruit Cup", price: 4.50, description: "Fresh seasonal fruit.", column: "left" },
 
-<!-- Appetizers -->
-<div class="tab-pane fade" id="appetizers" role="tabpanel" aria-labelledby="appetizers-tab">
-  <div class="row g-5">
-    <div class="col-lg-6">
-      <div class="menu-content mb-4"><a href="#">Bruschetta</a><span>$6.50</span></div>
-      <div class="menu-ingredients mb-4">Grilled bread, tomato, basil, garlic, olive oil.</div>
+    { name: "Mini Hot Dog", price: 6.50, description: "Hot dog served with fries.", column: "right" },
+    { name: "PB&J Sandwich", price: 5.50, description: "Peanut butter and jelly sandwich.", column: "right" },
+    { name: "Veggie Sticks", price: 4.95, description: "Carrots, celery, and cucumber sticks.", column: "right" },
+    { name: "Yogurt Parfait", price: 5.75, description: "Yogurt with granola and berries.", column: "right" },
+    { name: "Cheese Quesadilla", price: 6.75, description: "Cheese melted in a toasted tortilla.", column: "right" },
+    { name: "Mini Pizza", price: 7.25, description: "Personal cheese pizza.", column: "right" }
+  ];
 
-      <div class="menu-content mb-4"><a href="#">Stuffed Mushrooms</a><span>$7.50</span></div>
-      <div class="menu-ingredients mb-4">Button mushrooms stuffed with cheese and herbs.</div>
+  // Render function to keep styles exactly as in your snippet
+  function renderMenu(menuArray, leftId, rightId) {
+    const leftCol = document.getElementById(leftId);
+    const rightCol = document.getElementById(rightId);
 
-      <div class="menu-content mb-4"><a href="#">Calamari Fritti</a><span>$9.95</span></div>
-      <div class="menu-ingredients mb-4">Fried calamari with marinara sauce.</div>
+    if (!leftCol || !rightCol) return;
 
-      <div class="menu-content mb-4"><a href="#">Spinach Artichoke Dip</a><span>$8.50</span></div>
-      <div class="menu-ingredients mb-4">Creamy spinach and artichoke dip served with chips.</div>
+    menuArray.forEach(item => {
+      // Container for each item
+      const container = document.createElement("div");
+      container.className = "mb-4";
 
-      <div class="menu-content mb-4"><a href="#">Garlic Parmesan Wings</a><span>$10.95</span></div>
-      <div class="menu-ingredients mb-4">Chicken wings tossed in garlic Parmesan sauce.</div>
+      // Row with flex to separate name and price
+      const row = document.createElement("div");
+      row.className = "menu-content d-flex justify-content-between align-items-center";
 
-      <div class="menu-content mb-4"><a href="#">Caprese Skewers</a><span>$7.95</span></div>
-      <div class="menu-ingredients mb-4">Mozzarella, cherry tomatoes, basil, balsamic glaze.</div>
-    </div>
-    <div class="col-lg-6">
-      <div class="menu-content mb-4"><a href="#">Crab Cakes</a><span>$12.50</span></div>
-      <div class="menu-ingredients mb-4">Golden crab cakes served with remoulade sauce.</div>
+      // Name link styled like your menu
+      const nameLink = document.createElement("a");
+      nameLink.href = "#";
+      nameLink.textContent = item.name;
 
-      <div class="menu-content mb-4"><a href="#">Deviled Eggs</a><span>$6.00</span></div>
-      <div class="menu-ingredients mb-4">Classic deviled eggs with paprika and chives.</div>
+      // Price span right aligned
+      const priceSpan = document.createElement("span");
+      priceSpan.textContent = `£${item.price.toFixed(2)}`;
 
-      <div class="menu-content mb-4"><a href="#">Fried Zucchini Sticks</a><span>$7.00</span></div>
-      <div class="menu-ingredients mb-4">Crispy fried zucchini with ranch dipping sauce.</div>
+      row.appendChild(nameLink);
+      row.appendChild(priceSpan);
 
-      <div class="menu-content mb-4"><a href="#">Cheese Platter</a><span>$11.50</span></div>
-      <div class="menu-ingredients mb-4">Assorted cheeses served with crackers and fruit.</div>
+      // Description below
+      const description = document.createElement("div");
+      description.className = "menu-ingredients mt-1";
+      description.textContent = item.description;
 
-      <div class="menu-content mb-4"><a href="#">Buffalo Chicken Dip</a><span>$9.95</span></div>
-      <div class="menu-ingredients mb-4">Spicy buffalo chicken dip with tortilla chips.</div>
+      container.appendChild(row);
+      container.appendChild(description);
 
-      <div class="menu-content mb-4"><a href="#">Pretzel Bites</a><span>$6.95</span></div>
-      <div class="menu-ingredients mb-4">Soft pretzel bites with mustard dipping sauce.</div>
-    </div>
-  </div>
-</div>
+      // Append to left or right column
+      if (item.column === "left") {
+        leftCol.appendChild(container);
+      } else {
+        rightCol.appendChild(container);
+      }
+    });
+  }
 
-   <!-- Desserts -->
-<div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
-  <div class="row">
-    <div class="col-lg-6 menu-item">
-      <div class="menu-content"><a href="#">New York Cheesecake</a><span>£6.50</span></div>
-      <div class="menu-ingredients">Classic creamy cheesecake with graham crust.</div>
-
-      <div class="menu-content"><a href="#">Crème Brûlée</a><span>£7.25</span></div>
-      <div class="menu-ingredients">Vanilla custard with caramelized sugar crust.</div>
-
-      <div class="menu-content"><a href="#">Apple Pie à la Mode</a><span>£6.75</span></div>
-      <div class="menu-ingredients">Warm apple pie with vanilla ice cream.</div>
-
-      <div class="menu-content"><a href="#">Lemon Tart</a><span>£5.95</span></div>
-      <div class="menu-ingredients">Tangy lemon curd on buttery crust.</div>
-
-      <div class="menu-content"><a href="#">Coconut Macaroons</a><span>£4.95</span></div>
-      <div class="menu-ingredients">Chewy coconut cookies dipped in chocolate.</div>
-
-      <div class="menu-content"><a href="#">Bread Pudding</a><span>£6.25</span></div>
-      <div class="menu-ingredients">Served warm with caramel and whipped cream.</div>
-    </div>
-
-    <div class="col-lg-6 menu-item">
-      <div class="menu-content"><a href="#">Strawberry Shortcake</a><span>£6.95</span></div>
-      <div class="menu-ingredients">Shortcake layered with fresh strawberries and cream.</div>
-
-      <div class="menu-content"><a href="#">Banana Pudding</a><span>£5.95</span></div>
-      <div class="menu-ingredients">Creamy banana layers with vanilla wafers.</div>
-
-      <div class="menu-content"><a href="#">Chocolate Mousse</a><span>£6.25</span></div>
-      <div class="menu-ingredients">Rich chocolate whipped mousse with berries.</div>
-
-      <div class="menu-content"><a href="#">Brownie Sundae</a><span>£7.50</span></div>
-      <div class="menu-ingredients">Warm brownie, vanilla ice cream, hot fudge.</div>
-
-      <div class="menu-content"><a href="#">Raspberry Sorbet</a><span>£4.50</span></div>
-      <div class="menu-ingredients">Refreshing dairy-free raspberry treat.</div>
-
-      <div class="menu-content"><a href="#">Key Lime Pie</a><span>£6.00</span></div>
-      <div class="menu-ingredients">Tart lime custard with graham cracker crust.</div>
-    </div>
-  </div>
-</div>
-<!-- Kids Menu -->
-<div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
-  <div class="row">
-    <div class="col-lg-6 menu-item">
-      <div class="menu-content"><a href="#">Chicken Tenders</a><span>£6.50</span></div>
-      <div class="menu-ingredients">Crispy chicken strips with fries.</div>
-
-      <div class="menu-content"><a href="#">Grilled Cheese</a><span>£5.50</span></div>
-      <div class="menu-ingredients">Melted cheese on toasted white bread, served with chips.</div>
-
-      <div class="menu-content"><a href="#">Mac & Cheese</a><span>£5.75</span></div>
-      <div class="menu-ingredients">Classic macaroni and cheese.</div>
-
-      <div class="menu-content"><a href="#">PB&J Sandwich</a><span>£4.50</span></div>
-      <div class="menu-ingredients">Peanut butter and jelly on soft white bread.</div>
-
-      <div class="menu-content"><a href="#">Mini Pancakes</a><span>£5.25</span></div>
-      <div class="menu-ingredients">Stack of small pancakes with syrup.</div>
-
-      <div class="menu-content"><a href="#">Cheesy Quesadilla</a><span>£5.25</span></div>
-      <div class="menu-ingredients">Grilled tortilla with melted cheddar cheese.</div>
-    </div>
-
-    <div class="col-lg-6 menu-item">
-      <div class="menu-content"><a href="#">Mini Cheese Pizza</a><span>£5.95</span></div>
-      <div class="menu-ingredients">Kid-size pizza with mozzarella and tomato sauce.</div>
-
-      <div class="menu-content"><a href="#">Pasta with Butter</a><span>£4.95</span></div>
-      <div class="menu-ingredients">Plain pasta tossed with butter and parmesan.</div>
-
-      <div class="menu-content"><a href="#">Mini Corn Dogs</a><span>£5.95</span></div>
-      <div class="menu-ingredients">Bite-size hot dogs in cornmeal batter.</div>
-
-      <div class="menu-content"><a href="#">Kids Burger</a><span>£6.25</span></div>
-      <div class="menu-ingredients">Plain burger on bun, served with fries.</div>
-
-      <div class="menu-content"><a href="#">Fish Bites</a><span>£6.75</span></div>
-      <div class="menu-ingredients">Fried fish nuggets with tartar sauce.</div>
-
-      <div class="menu-content"><a href="#">Mini Spaghetti Bowl</a><span>£5.95</span></div>
-      <div class="menu-ingredients">Spaghetti with mild tomato sauce.</div>
-    </div>
-  </div>
-</div>
+  // Wait for DOM content loaded before rendering
+  document.addEventListener("DOMContentLoaded", () => {
+    renderMenu(beverageMenu, "left-column", "right-column");
+    renderMenu(lunchMenu, "lunch-left", "lunch-right");
+    renderMenu(dinnerMenu, "dinner-left", "dinner-right");
+    renderMenu(appetizersMenu, "appetizers-left", "appetizers-right");
+    renderMenu(dessertsMenu, "desserts-left", "desserts-right");
+    renderMenu(kidsMenu, "kids-left", "kids-right");
+  });
+</script>
 
 <!-- End Book A Table Section -->
 <!-- ======= Gallery Section ======= -->
@@ -556,87 +480,88 @@
 </section>
   <!-- End Book A Gallery Section --> 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    
-    <div class="container" data-aos="fade-up">
+<section id="contact" class="contact">
 
-      <div class="section-title">
-        <h3>Contact</h3>
-        <p>Contact Us</p>
-      </div>
-      <div id="map"></div>
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h3>Contact</h3>
+      <p>Contact Us</p>
     </div>
 
-    <div data-aos="fade-up">
-      <!-- Insert the URL of the restaurant's location that you prefer. -->
-    
-    </div>
+    <div id="map" style="width: 100%; height: 400px; margin-bottom: 3rem;"></div>
 
-    <div class="container" data-aos="fade-up">
+    <div class="row mt-5">
 
-      <div class="row mt-5">
-
-        <div class="col-lg-4">
-          <div class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt-fill"></i>
-              <h4>Location:</h4>
-              <p>Lambeth Walk, London SE11 6LU.</p>
-            </div>
-
-            <div class="open-hours">
-              <i class="bi bi-clock-fill"></i>
-              <h4>Open Hours:</h4>
-              <p>
-                Monday - Sunday:<br>
-                9:00 AM - 11:00 PM
-              </p>
-            </div>
-
-            <div class="email">
-              <i class="bi bi-envelope-at-fill"></i>
-              <h4>Email:</h4>
-              <p>cotebrasserie@gmail.co.uk</p>
-            </div>
-
-            <div class="phone">
-              <i class="bi bi-telephone-inbound-fill"></i>
-              <h4>Phone:</h4>
-              <p>+44785292547</p>
-            </div>
-
+      <div class="col-lg-4">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h4>Location:</h4>
+            <p>Lambeth Walk, London SE11 6LU.</p>
           </div>
 
+          <div class="open-hours">
+            <i class="bi bi-clock-fill"></i>
+            <h4>Open Hours:</h4>
+            <p>
+              Monday - Sunday:<br>
+              9:00 AM - 11:00 PM
+            </p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope-at-fill"></i>
+            <h4>Email:</h4>
+            <p>cotebrasserie@gmail.co.uk</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-telephone-inbound-fill"></i>
+            <h4>Phone:</h4>
+            <p>+44785292547</p>
+          </div>
         </div>
+      </div>
 
-        <div class="col-lg-8 mt-5 mt-lg-0">
+      <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <form class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-              </div>
+        <form class="php-email-form" id="contact-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
             </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
-            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
 
-            <div class="text-center"><button type="submit" onclick="showAlert(&#39;Thank you for contacting us!&#39;)">Send
-                Message</button></div>
-          </form>
-
+        <div id="thankyou-modal" class="modal">
+          <div class="modal-content">
+            <button id="close-envelope" class="close-btn" aria-label="Close popup">&times;</button>
+           <div class="icon-envelope animated-envelope">✉️</div>
+            <h2>Thank you for contacting us!</h2>
+            <p>Your message has been sent.</p>
+          </div>
         </div>
 
       </div>
 
-    </div>
-  </section><!-- End Contact Section -->
+    </div> <!-- End .row -->
+
+  </div> <!-- End .container -->
+
+</section><!-- End Contact Section -->
 </main>
 <!-- ======= Footer ======= --> 
 
@@ -701,7 +626,7 @@
 			function refreshCSS() {
 				var sheets = [].slice.call(document.getElementsByTagName("link"));
 				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
+				for (var i = 0; i <scriptsheets.length; ++i) {
 					var elem = sheets[i];
 					var parent = elem.parentElement || head;
 					parent.removeChild(elem);
@@ -730,7 +655,7 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
-</script>
+</scriptsheets.length;>
 
 <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><div id="shadow-host-companion"><template shadowrootmode="open"><div id="inner-shadow-companion"><div class="css-0" id="tooltip-mount-layer-companion"></div><style data-emotion="companion-global"></style><style data-emotion="companion" data-s=""></style><style>
             
@@ -846,5 +771,54 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const contactForm = document.getElementById('contact-form');
+  const thankYouModal = document.getElementById('thankyou-modal');
+  const closeBtn = document.getElementById('close-envelope');
+
+  if (contactForm && thankYouModal && closeBtn) {
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      thankYouModal.style.display = 'flex'; // Use flex to keep centering
+      contactForm.reset();
+    });
+
+    closeBtn.addEventListener('click', function () {
+      thankYouModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (e) {
+      if (e.target === thankYouModal) {
+        thankYouModal.style.display = 'none';
+      }
+    });
+  }
+
+  // Booking form submit redirect if applicable
+  const bookingForm = document.getElementById('booking-form');
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const guests = document.getElementById('guests').value;
+
+      const params = new URLSearchParams({
+        name,
+        email,
+        date,
+        time,
+        guests
+      });
+
+      window.location.href = 'confirmation.html?' + params.toString();
+    });
+  }
+});
+</script>
   </body>
-</html>
+  </html>

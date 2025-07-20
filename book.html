@@ -17,7 +17,7 @@
     h1 {
       text-align: center;
       color: #333;
-      background-color:#a67c00; /* to make text readable */
+      background-color:#eaca69; /* to make text readable */
       padding: 10px;
       border-radius: 6px;
     }
@@ -40,6 +40,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       box-sizing: border-box;
+      resize: none; /* Prevent resizing */
     }
     button {
       margin-top: 20px;
@@ -91,14 +92,40 @@
 
     <button type="submit">Submit Booking</button>
   </form>
+<script>
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Stop default form action
 
-  <script>
-    // Simple front-end form submission handler
-    document.getElementById('bookingForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form from submitting normally
-      alert('Thank you for your booking request! We will get back to you shortly.');
-      this.reset(); // Reset the form fields
-    });
-  </script>
+  // Collect values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
+  const guests = document.getElementById('guests').value;
+  const requests = document.getElementById('requests').value;
+
+  // Email validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // Redirect to confirmation page with query parameters
+  const params = new URLSearchParams({
+    name,
+    email,
+    phone,
+    date,
+    time,
+    guests,
+    requests
+  });
+
+  window.location.href = 'confirmation.html?' + params.toString();
+});
+</script>
+ 
 </body>
 </html>
