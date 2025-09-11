@@ -553,8 +553,8 @@ html {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
-  overflow: hidden;
+  padding: 40px;
+  
 }
 
 .section-header {
@@ -585,7 +585,6 @@ section {
 }
 
 .section-title h2::after {
-  content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
@@ -597,20 +596,21 @@ section {
   margin: 0;
   margin: 0;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 700px;
   font-family: "Playfair Display", serif;
   color: #cda45e;
 }
-
-
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
 .about .about-img {
   min-height: 350px;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
-
+.our-history .about-img{
+  background-size: cover;
+  width: 120px;
+  height:600px;
+  background-position: center;
+}
 
 .about .call-us {
   left: 10%;
@@ -670,7 +670,6 @@ section {
 }
 
 .about .play-btn:before {
-  content: "";
   position: absolute;
   width: 120px;
   height: 120px;
@@ -688,7 +687,6 @@ section {
 }
 
 .about .play-btn:after {
-  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -703,7 +701,6 @@ section {
 }
 
 .about .play-btn:hover:before {
-  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
